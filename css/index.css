@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+.header{
+    width: 100%;
+}
+
+.header-top{
+    display: flex;
+    justify-content: center;
+
+}
+
+.header-top-img img{
+    width: 360px;
+    height: 150px;
+}
+
+.header-top-search{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.header-top-search input{
+    width: 100%;
+    height: 30%;
+    border-radius: 5px;
+}
+
+.header-top-submit{
+    display: flex;
+    align-items: center;
+}
+
+.header-top-submit input{
+    width: 100px;
+    height: 30%;
+    border-radius: 5px;
+}
+
+.header-top-buttom{
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.header-top-buttom-buy{
+    width: 230px;
+    height: 28%;
+    border-radius: 5px;
+    background-color: #373737;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-top-buttom-buy a{
+    color: white;
+    text-decoration: none;
+}
+
+/* header section two  ........*/
+
+.header-buttom{
+    background-color: #66D7D1;
+    height: 40px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+}
+
+.header-buttom-list ul{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.header-buttom-list ul img{
+    width: 25px;
+    height: 25px;
+}
+
+.header-buttom-list li{
+    margin-left: 60px;
+    list-style: none;
+}
+
+.header-buttom-list li a{
+    text-decoration: none;
+    color: black;
+}
+
+.division{
+    margin: 30px 75px;
+    border: 4px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+}
+
+/* cards main................................... */
+
+.cards h1{
+    margin-top: 80px;
+    padding-left: 50px;
+}
+
+.cards-destacados{
+    padding: 10px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 40px;
+    grid-gap: 10px 30px;
+    
+}
+
+.card-1{
+    grid-column-start: 1;
+    grid-column-end:  2;
+    border: 4px solid #fff;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+}
+
+.card-2{
+    border: 4px solid #fff;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+}
+
+.card-3{
+    border: 4px solid #fff;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+}
+
+.card-4{
+    border: 4px solid #fff;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+}
+
+.card-image{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-title{
+    text-align: center;
+}
+.card-icon-heart{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: khaki;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+}
+
+.card-icon-heart img{
+    width: 22px;
+    height: 22px;
+    padding-left: 15px;
+}
