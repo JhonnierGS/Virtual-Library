@@ -12,8 +12,8 @@
             <div class="header-top-img">
                 <img src="img/book-store.jpg" alt="logo-image">
             </div>
-            <div class="header-top-search">
-                <input type="search" name="busquedaLibros" placeholder="Buscar">
+            <div class="header-top-search" id="formulario">
+                <input type="text" name="busquedaLibros" placeholder="Buscar" id="inputFormulario" >
             </div>
             <div class="header-top-submit">
                 <input type="submit" value="Buscar">
@@ -43,7 +43,9 @@
     <main class="cards">
         <h1>Destacados</h1>
         <section class="cards-destacados" id="destacados">
-            <!-- fetch -->
+            <div id="clone-element">
+                <!-- fetch -->
+            </div>
         </section>
         
         <h1>Novedades</h1>
@@ -53,5 +55,6 @@
     </main>
 
     <script src="js/library.js"></script>
+    <script src="js/formulario.js"></script>
 </body>
 </html>
