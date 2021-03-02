@@ -1,0 +1,21 @@
+.text-title{
+    padding: 20px 100px 0;
+    color: #373737;
+}
+
+.text-content{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-content ul li{
+    list-style: none;
+    margin-top: 20px;
+    color: #373737;
+}
+
+.header-top{
+    display: flex;
+    justify-content: center;
+}

@@ -9,8 +9,7 @@ body{
 
 .header-top{
     display: flex;
-    justify-content: center;
-
+    margin-left: 80px;
 }
 
 .header-top-img img{
@@ -22,6 +21,7 @@ body{
     width: 30%;
     display: flex;
     align-items: center;
+    margin-left: 280px;
 }
 
 .header-top-search input{
@@ -37,8 +37,17 @@ body{
 
 .header-top-submit input{
     width: 100px;
-    height: 30%;
+    height: 34%;
     border-radius: 5px;
+    border: 1px solid #373737;
+    background: #373737;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-top-submit input:hover{
+    background: #66D7D1;
 }
 
 .header-top-buttom{
@@ -53,14 +62,24 @@ body{
     border-radius: 5px;
     background-color: #373737;
     display: flex;
+    cursor: pointer;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-top-buttom-buy:hover{
+    border: 1px solid #373737;
+    background-color: #66D7D1;
 }
 
 .header-top-buttom-buy a{
     color: white;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
+
+
 
 /* header section two  ........*/
 
@@ -77,21 +96,47 @@ body{
     height: 40px;
     display: flex;
     align-items: center;
+    padding: 0;
+}
+
+.icon-home{
+    width: 150px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon-home:hover{
+    background: rgb(0, 0, 0, 0.3);
 }
 
 .header-buttom-list ul img{
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
 }
 
 .header-buttom-list li{
-    margin-left: 60px;
+    
     list-style: none;
+    cursor: pointer;
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-buttom-list li:hover{
+    background: rgb(0, 0, 0, 0.3);
 }
 
 .header-buttom-list li a{
     text-decoration: none;
     color: black;
+
 }
 
 .division{
@@ -148,6 +193,7 @@ body{
 .card-title{
     text-align: center;
 }
+
 .card-icon-heart{
     grid-row-start: 2;
     grid-row-end: 3;
@@ -157,10 +203,85 @@ body{
     align-items: center;
     border-radius: 4px;
     box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card-icon-heart:hover{
+    background-color: #373737;
+    color: white;
+}
+
+.card-icon-heart a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-icon-heart a:hover{
+    text-decoration: underline;
+    color: white;
 }
 
 .card-icon-heart img{
     width: 22px;
     height: 22px;
     padding-left: 15px;
+}
+
+/* footer......................... */
+
+.footer{
+    background: #303030;
+    margin-top: 40px;
+}
+
+.footer-container-text{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footer-text{
+    color: white;
+    
+    padding-top: 25px;
+}
+
+.footer-text h3{
+    font-size: 13px;
+    padding-left: 40px;
+}
+
+.footer-text ul li{
+    list-style: none;
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+.footer-text ul li a{
+    color: #cccccc;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-text ul li a:hover{
+    color: white;
+
+}
+
+.footer-line{
+    width: 87%;
+    height: 1px;
+    background: #cccccc;
+    margin-left: 123px;
+    margin-top: 20px;
+}
+
+.footer-parrafo{
+    padding-top: 10px;
+    margin-bottom: -10px;
+    margin-left: 125px;
+    color: #cccccc;
+    font-size: 12px;
 }
