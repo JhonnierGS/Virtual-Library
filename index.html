@@ -3,48 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
-    <title>Library</title>
+    <link rel="stylesheet" href="css/custom-select.css">
+    <title>Api-Library</title>
 </head>
 <body>
-    <header class="header">
-        <section class="header-top">
-            <div class="header-top-img">
-                <img src="img/book-store.jpg" alt="logo-image">
-            </div>
-            <div class="header-top-search" id="formulario">
-                <input type="text" name="busquedaLibros" placeholder="Buscar" id="inputFormulario" >
-            </div>
-            <div class="header-top-submit">
-                <input type="submit" value="Buscar">
-            </div>
-        </section>
-        <section class="header-buttom">
-            <div class="header-buttom-list">
-                <ul>
-                    <a href="index.html" class="icon-home"><img src="icons/home-solid.svg" alt=""></a>
-                    <li><a href="html/autor.html">Autores</a> </li>
-                    <li><a href="html/categoria.html">Categorias</a> </li>
-                    <li><a href="html/sobre.html">Sobre Nosotros</a></li>
-                </ul>
-            </div>
-        </section>
+    <nav class="navbar">
+        <div class="container navbar__content">
+            <h1>What is your Book?</h1>
+            <button class="btn-dark-mode">
+                <!-- <i class="far fa-sun"></i> -->
+                <i class="far fa-moon"></i>
+                Dark Mode
+            </button>
+        </div>
+    </nav>
+
+    <header class="container filter-content my-2"> 
+        <form class="form-search" id="formulario">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Ingresa Libro" id="inputFormulario">
+        </form>
+        <div class="custom-select" style="width:200px;">
+            <select>
+                <option value="">Filtrar por genero</option>
+                <option value="">Todos</option>
+                <option value="electronica">Electrónica</option>
+                <option value="software_libre_herramientas">Herramientas</option>
+                <option value="hackspace">HackSpace</option>
+                <option value="ciencia">Ciencia</option>
+            </select>
+        </div>
     </header>
 
-    <section class="division"></section>
+    <main class="container grid" id="libros">
+        <!-- <article class="card">
+            <img src="https://olcovers2.blob.core.windows.net/coverswp/2018/07/Science_Of_Sound_Laboratory_Manual-OpenLibra-350x451.jpg" alt="" class="img-fluid">
+            <div class="cards-content">
+                <h3>Nombre</h3>
+                <p>
+                    <b>population: </b>
+                    5000000
+                </p>
+                <p>
+                    <b>Capital: </b>
+                    santiago
+                </p>
+                <p>
+                    <b>Region: </b>
+                    America
+                </p>
 
-    <main class="cards">
-        <h1>Destacados</h1>
-        <section class="cards-destacados" id="destacados">
-                <!-- fetch -->
-        </section>
-        
-        <h1>Novedades</h1>
-        <section class="cards-destacados" id="novedades">
-            <!-- fetch -->
-        </section>
+            </div>
+        </article> -->
     </main>
-
 
     <footer class="footer">
         <div class="footer-container-text">
@@ -87,8 +103,9 @@
         <div class="footer-line"></div>
         <p class="footer-parrafo">Desarrollado por Jhonny-GS Copyright © 2021</p>
     </footer>
-
-    <script src="js/library.js"></script>
+    <script src="js/darkMode.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/custom-select.js"></script>
     <script src="js/formulario.js"></script>
 </body>
 </html>
