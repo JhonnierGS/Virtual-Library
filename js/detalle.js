@@ -23,9 +23,13 @@ const librillos = (data) => {
     let elementos = ''
     data.forEach(item => {
         elementos += `
-        <article class="card">
-        <img src=${item.cover} alt="" class="img-fluid">
-        <div class="cards-content">
+        
+    <article class="card-central">
+        <div class="imgBox">
+            <img src=${item.cover} alt="" class="">
+            <img src=${item.cover} alt="" class="">
+        </div>
+        <div class="card-details">
             <h3>${item.name}</h3>
             <p>
                 <b>Author: </b>
@@ -45,7 +49,7 @@ const librillos = (data) => {
             </p>
         </div>
     </article>
-        `
+                `
     })
     libros.innerHTML = elementos
 }
