@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", e =>{
 
 const fetchData = async () => {
     try {
-        const res = await fetch('https://www.etnassoft.com/api/v1/get/?num_items=50')
+        const res = await fetch('https://www.etnassoft.com/api/v1/get/?category=libros_programacion&num_items=50')
         const data = await res.json()
         const filtroData = data.filter(item => item.title === params)
         librillos(filtroData)
@@ -30,10 +30,10 @@ const librillos = (data) => {
             <img src=${item.cover} alt="" class="">
         </div>
         <div class="card-details">
-            <h3>${item.name}</h3>
+            <h6>${item.content_short}</h6>
             <p>
-                <b>Author: </b>
-                ${item.author}
+                <b>pages: </b>
+                ${item.pages}
             </p>
             <p>
                 <b>lenguage: </b>
@@ -42,10 +42,6 @@ const librillos = (data) => {
             <p>
                 <b>Año: </b>
                 ${item.publisher_date}
-            </p>
-            <p>
-                <b>Categoria: </b>
-                ${item.categories[0].name}
             </p>
         </div>
     </article>

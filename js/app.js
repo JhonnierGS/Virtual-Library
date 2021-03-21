@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", e =>{
 
 const fetchData = async () => {
     try {
-        const res = await fetch('https://www.etnassoft.com/api/v1/get/?num_items=50')
+        const res = await fetch('https://www.etnassoft.com/api/v1/get/?category=libros_programacion&num_items=50')
         const data = await res.json()
         librillos(data)
         formularioCliente(data)
@@ -32,19 +32,13 @@ const librillos = (data) => {
                 ${item.author}
             </p>
             <p>
-                <b>lenguage: </b>
-                ${item.language}
-            </p>
-            <p>
-                <b>Año: </b>
-                ${item.publisher_date}
-            </p>
-            <p>
                 <b>Categoria: </b>
                 ${item.categories[0].name}
             </p>
             <p>
-                <a href="html/libro.html?name=${item.title}">Más información</a>
+                <div class="info-container">
+                    <a href="html/libro.html?name=${item.title}"><span>Más información 🔽</span></a>
+                </div>
             </p>
         </div>
     </article>

@@ -33,15 +33,27 @@
 
 .card-details{
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     width: 100%;
     height: 100%;
     padding: 20px;
+    margin-bottom: 700px;
+    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.card-details h6{
+    font-size: 15px;
+    margin: 0 auto 40px;
+}
+
+.card-details p{
+    margin-bottom: 0;
 }
 
 .card-central .imgBox{
@@ -51,7 +63,7 @@
     z-index: 1;
     transform-origin: left;
     transform-style: preserve-3d;
-    background: #000;
+    /* background: #000; */
     transition: 1s;
     box-shadow: 10px 20px 40px rgba(0,0,0, 0.25);
 }
@@ -73,4 +85,114 @@
 
 .card-central .imgBox img:nth-child(2){
     transform: rotateY(180deg);
+}
+
+/* liquid button animation... */
+
+.button-liquid{
+    position: relative;
+    padding: 20px 50px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+}
+
+.button-liquid .button-text{
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 5px;
+    
+}
+
+.button-liquid .liquid{
+    position: absolute;
+    left: 0;
+    top: -80px;
+    width: 200px;
+    height: 200px;
+    background: var(--color-blue);
+    box-shadow: inset 0 0 50px rgba(0,0,0, .5);
+    transition: 0.5s;
+}
+
+.button-liquid:hover .liquid{
+    top: -120px;
+}
+
+.button-liquid .liquid:before,
+.button-liquid .liquid:after{
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+
+.button-liquid .liquid:before{
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 10s linear infinite;
+}
+.button-liquid .liquid:after{
+    border-radius: 40%;
+    background: rgba(20, 20, 20, 0.5);
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate{
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+
+@media (max-width: 1000px){
+    .title-card h3{
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 750px){
+    
+}
+
+@media (max-width: 600px){
+    .card-central:hover{
+        transform: none;
+    }
+    
+    .card-central:hover .imgBox{
+        transform: none;
+    }
+    
+    .card-central .imgBox img{
+        transition: all 0.5s ease;
+    }
+
+    .card-central .imgBox img:hover{
+        padding-bottom: 400px;
+    }
+
+    .button-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .button-liquid{
+    padding: 20px 45px;
+    width: 170px;
+    height: 60px;
+    }
+
 }
