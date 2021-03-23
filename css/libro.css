@@ -147,6 +147,109 @@
     animation: animate 10s linear infinite;
 }
 
+/* button liquid 2............. */
+.button-container2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button-liquid2{
+    position: relative;
+    padding: 20px 50px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 220px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+}
+
+.button-liquid2 .button-text2{
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 19px;
+    letter-spacing: 2px;
+    
+}
+
+.button-liquid2 .liquid2{
+    position: absolute;
+    left: 0;
+    top: -80px;
+    width: 220px;
+    height: 200px;
+    background: var(--color-blue);
+    box-shadow: inset 0 0 50px rgba(0,0,0, .5);
+    transition: 0.5s;
+}
+
+.button-liquid2:hover .liquid2{
+    top: -120px;
+}
+
+.button-liquid2 .liquid2:before,
+.button-liquid2 .liquid2:after{
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+
+.button-liquid2 .liquid2:before{
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 10s linear infinite;
+}
+.button-liquid2 .liquid2:after{
+    border-radius: 40%;
+    background: rgba(20, 20, 20, 0.5);
+    animation: animate 10s linear infinite;
+}
+
+/* table cell............... */
+
+.table{
+    width: 100%;
+    margin: 120px auto 0;
+    padding: 0 30px;
+    
+}
+
+.table thead{
+    background-color: var(--color-bg-secondary);
+    box-shadow: var(--box-shadow);
+}
+
+.table tbody{
+    text-align: center;
+}
+
+.table tbody td{
+    height: 40px;
+}
+
+
+.table thead th{
+    height: 40px;
+}
+
+.table img{
+    width: 130px;
+    height: 160px;
+    border-radius: 5px;
+}
+
+.vaciar-boton{
+    background-color: var(--color-bg-secondary);
+    box-shadow: var(--box-shadow);
+}
+
 @keyframes animate{
     0% {
         transform: translate(-50%, -75%) rotate(0deg);

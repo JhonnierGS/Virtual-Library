@@ -10,6 +10,7 @@ footer{
     display: flex;
     justify-content: space-between;
     font-family: 'Poppins', sans-serif;
+    margin-top: 150px;
 }
 
 .footer-container{
