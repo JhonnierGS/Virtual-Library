@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/libro.css">
+    <link rel="stylesheet" href="../../css/quickStyle/flying.css">
+    <title>Rocket animation</title>
+</head>
+<body>
+        <div class="scene">
+            <div class="rocket">
+                <img src="../../images/rocket.png" alt="">
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener("mousemove", function(e){
+                var rocket = document.querySelector('.rocket')
+                rocket.style.left = e.offsetX + 'px'
+                rocket.style.top = e.offsetY + 'px'
+            })
+
+
+            function start(){
+                let count = 50
+                let scene = document.querySelector('.scene')
+                let i = 0
+
+                while(i < count){
+                    let start = document.createElement('i')
+                    let x = Math.floor(Math.random() * window.innerWidth)
+
+                    let duration = Math.random() * 1
+                    let h = Math.random() * 100
+
+                    start.style.left = x + 'px'
+                    start.style.width = 1 + 'px'
+                    start.style.height = h + 'px'
+                    start.style.animationDuration = duration + 's'
+
+
+                    scene.appendChild(start)
+                    i++
+                }
+            }
+            start()
+        </script>
+</body>
+</html>

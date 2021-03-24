@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/libro.css">
+    <link rel="stylesheet" href="../../css/quickStyle/sobre.css">
+    <title>About Us | Smoke</title>
+</head>
+<body>
+    
+        <header class="button-position"> 
+            <div class="button-container">
+                <a class="button-liquid" href="../../index.html">
+                    <samp class="button-text">Volver</samp>
+                    <div class="liquid"></div>
+                </a>
+            </div>
+        </header>
+
+
+        <section>
+            <h1 class="text2">About Us,  Smoke?</h1>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis ipsum illo minus molestiae laborum eveniet fugiat hic non voluptates quibusdam iusto minima doloribus, cupiditate dignissimos odit consequuntur asperiores! Fugiat!
+            Alias, architecto saepe quibusdam perspiciatis cum magnam in dolorem ratione error, quo ad molestias vel a hic ut, aliquam asperiores cumque nostrum? Asperiores officia aspernatur saepe, voluptas veritatis libero deserunt.
+            Earum, minus corporis et quia perspiciatis saepe consequuntur repudiandae natus soluta quam quibusdam id odio doloremque possimus voluptates molestias quae ex, veniam, necessitatibus ut? Fugiat tempora quo nihil numquam totam.
+            Qui, eum. Libero quos eaque autem iusto voluptatem rerum sapiente porro doloremque similique aut inventore vel magni adipisci, accusantium molestiae incidunt nostrum quam et aspernatur earum voluptatum possimus perspiciatis officia.
+            </p>
+            </section>
+
+        <script>
+            const text = document.querySelector('.text');
+            const text2 = document.querySelector('.text2');
+            text.innerHTML = text.textContent.replace(/\S/g,"<span>$&</span>");
+            text2.innerHTML = text2.textContent.replace(/\S/g,"<span>$&</span>");
+
+            const letters = document.querySelectorAll('span');
+            for(let i=0; i<letters.length; i++){
+                letters[i].addEventListener("mouseover", () => {
+                    letters[i].classList.add('active')
+                })
+            }
+
+
+        </script>
+</body>
+</html>

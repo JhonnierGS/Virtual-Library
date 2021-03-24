@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+    overflow: hidden;
+}
+
+.container-cube{
+    position: relative;
+    width: 100%;
+    transform: rotate(-35deg);
+}
+
+.container-cube .box{
+    position: relative;
+    left: -200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% + 400px);
+    height: 200px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    animation: animateSurface 1.5s ease-in-out infinite;
+}
+
+@keyframes animateSurface{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-200px);
+    }
+}
+
+
+
+.container-cube .box .cube{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #66ff66;
+    box-shadow: 0 0 5px rgba(102, 255, 102, 1),
+    0 0 25px rgba(102, 255, 102, 1),
+    0 0 50px rgba(102, 255, 102, 1),
+    0 0 100px rgba(102, 255, 102, 1),
+    0 0 200px rgba(102, 255, 102 , 0.5),
+    0 0 300px rgba(102, 255, 102 , 0.5);
+    transform-origin: bottom right;
+    animation: animateCube 1.5s ease-in-out infinite;
+}
+
+@keyframes animateCube{
+    0%{
+        transform: rotate(0deg);
+    }
+    60%{
+        transform: rotate(90deg);
+    }
+    65%{
+        transform: rotate(85deg);
+    }
+    70%{
+        transform: rotate(90deg);
+    }
+    75%{
+        transform: rotate(87.5deg);
+    }
+    80%,100%{
+        transform: rotate(90deg);
+    }
+}
+
+
+.button-position{
+    background: #000;
+    width: 100%;
+    padding: 35px 50px;
+}
