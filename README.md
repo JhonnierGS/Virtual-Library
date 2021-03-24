@@ -3,7 +3,7 @@ Virtual Library es una página web hecha en HTML, CSS y JavaScript vanilla de c�
 
 📚 Buscar entre 50 libros de programación. 
 
-🔽 Filtrar por categoríasen Algoritmos, Dispositivos Móviles, Hardware, Java, Programación y otros lenguajes.
+🔽 Filtrar por categoríasen en Algoritmos, Dispositivos Móviles, Hardware, Java, Programación y otros lenguajes.
 
 🌙🌞 Tiene una opción DarkMode o LightMode.
 
