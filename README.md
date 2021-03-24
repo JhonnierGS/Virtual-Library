@@ -1,15 +1,19 @@
 # 📖 Virtual.Library
-Virtual Library es una pagina web heacha en HTML, CSS y JavaScript vanilla donde puedes.
+Virtual Library es una página web hecha en HTML, CSS y JavaScript vanilla de código abierto donde puedes.
 
-📚 Buscar libros y revistas. 
+📚 Buscar entre 50 libros de programación. 
 
-🔽 Filtrar por categorias en ciencia, hackers, electronica y herramientas entre otros.
+🔽 Filtrar por categoríasen Algoritmos, Dispositivos Móviles, Hardware, Java, Programación y otros lenguajes.
 
-🌙🌞 Opcion DarkMode o LightMode.
+🌙🌞 Tiene una opción DarkMode o LightMode.
 
+📑 Puedes dar click en más información del libro que escojas y allí, agregar a una lista de favoritos   
 
+Si quieres puedes hacerle un fork y agregar o mejorar el código, eso me ayudaría mucho.
 
+# ✳ Footer
 
+✨ si llegas a la parte del footer, no olvides visitar los Quick Links, allí encontraras animaciones hechas en CSS y JS
  
 
 
